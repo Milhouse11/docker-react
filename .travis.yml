@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t dockerKurs -f Dockerfile.dev .
+  - docker build -t dockerkurs -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true dockerKurs npm run test -- --coverage
+  - docker run -e CI=true dockerkurs npm run test -- --coverage
